@@ -6,4 +6,8 @@ import { Injectable } from '@angular/core';
 export class CreditoService {
 
   constructor() { }
+
+  debitaCredito(valorAtual:number, newValue:number):number{
+    return valorAtual + newValue;
+  }
 }
