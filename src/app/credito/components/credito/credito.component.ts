@@ -16,6 +16,10 @@ export class CreditoComponent implements OnInit {
     this.credito = 0;
   }
 
+  aviso(){
+    alert("Esta é uma atividade da disciplina de mobile com a framework Javascript Angular");
+  }
+
   credita(value: number):number{
     return this.credito = this.credito + value;
   }
