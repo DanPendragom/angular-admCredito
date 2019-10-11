@@ -16,6 +16,10 @@ export class CreditoComponent implements OnInit {
     this.credito = 0;
   }
 
+  credita(value: number):number{
+    return this.credito = this.credito + value;
+  }
+
   get getCredito(){
     return this.credito;
   }

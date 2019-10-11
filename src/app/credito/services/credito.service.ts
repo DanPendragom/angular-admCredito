@@ -10,4 +10,5 @@ export class CreditoService {
   debitaCredito(valorAtual:number, newValue:number):number{
     return valorAtual + newValue;
   }
+  
 }

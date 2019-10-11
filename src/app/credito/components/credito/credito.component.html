@@ -7,15 +7,19 @@
             <h3>Credito Atual</h3>
         </div>
         <div>
-            <input readonly type="text" id="credito">
+            <input 
+            readonly 
+            type="text" 
+            id="credito"
+            [value]="getCredito">
         </div>
         <div class="deb">
-            <button>Debitar</button>
+            <button (click)="credita(-1)">Debitar</button>
         </div>
         <div class="option">
-            <button>R$1</button>
-            <button>R$10</button>
-            <button>R$100</button>
+            <button (click)="credita(1)">R$1</button>
+            <button (click)="credita(10)">R$10</button>
+            <button (click)="credita(100)">R$100</button>
         </div>
     </div>
 </section>
