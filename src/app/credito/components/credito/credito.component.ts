@@ -8,16 +8,16 @@ import {CreditoService} from '../../services';
 })
 export class CreditoComponent implements OnInit {
   
-  constructor(private debita: CreditoService) { }
+  constructor() { }
 
-  private credito;
+  private credito:number;
   
   ngOnInit() {
-    this.credito = 0;
+    this.credito = 10;
   }
 
   aviso(){
-    alert("Esta é uma atividade da disciplina de mobile com a framework Javascript Angular");
+    alert("Esta é uma atividade da disciplina de mobile com uma framework Javascript chamda Angular");
   }
 
   credita(value: number):number{
